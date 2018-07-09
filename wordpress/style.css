@@ -3,23 +3,53 @@
 	transform-origin:center top;
 	animation:show 3s both;
 }
+span.appear {display:inline-block;}
+.d1 {animation-delay:1s;}
+.d2 {animation-delay:2s;}
 
 @keyframes show {
-	0% {
-		transform:translate(0,4em);
-		opacity:0;
-		text-shadow:0 0 0 #0f0;
-	}
-	50% {
-		/*text-shadow:0 0 0.5em #0f0; コマンドスラッシュ*/ 
-	}
-	100% {
-		transform:translate(0,0);
-		opacity:1;
-		text-shadow:none;
-	}
+0% {
+	transform:translate(0,3em);
+	opacity:0;
+	text-shadow:0 0 0 #0f0;
 }
+50% {
+/*text-shadow:0 0 0.5em #0f0; コマンドスラッシュ*/ 
+}
+100% {
+	transform:translate(0,0);
+	opacity:1;
+	text-shadow:none;
+}
+}
+body {
+	background-color:#000;
+}
+
 h1 {
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	margin-top: 50vh;
+}
+p {	
 	text-align: center;
 	margin-top: 50vh;
+	margin-left: 50vw;
+
+}
+/* intro */
+
+#title {
+    color: #fff;
+    font-size: 22px;
+	letter-spacing: 10px;
+    font-family: "源暎こぶり明朝",serif;
+    -webkit-writing-mode: vertical-rl;
+  	-ms-writing-mode: tb-rl;
+ 	writing-mode: vertical-rl;
+  	top:50%;
+  	left: 50%;
+  	transform:translate(-50%, -50%);
+
 }
