@@ -40,6 +40,12 @@ p {
 }
 /* intro */
 
+
+#intro {
+	text-align: center;
+	line-height:400%;
+}
+
 #title {
     color: #fff;
     font-size: 22px;
