@@ -1,12 +1,39 @@
 // JavaScript Document
 $(function() {
-    var $allMsg = $('#title');
-    var $wordList = $('#title').html().split("");
-    $('#title').html("");
+    var $allMsg = $('#text1');
+    var $wordList = $('#text1').html().split("");
+    $('#text1').html("");
+    var $idx = 0;
+
     $.each($wordList, function(idx, elem) {
         var newEL = $("<span/>").text(elem).css({ opacity: 0 });
         newEL.appendTo($allMsg);
-        newEL.delay(idx * 200);
+        newEL.delay($idx * 200);
         newEL.animate({ opacity: 1 }, 1100);
+        $idx += 1;
+    });
+
+    $allMsg = $('#text2');
+    $wordList = $('#text2').html().split("");
+    $('#text2').html("");
+
+    $.each($wordList, function(idx, elem) {
+        var newEL = $("<span/>").text(elem).css({ opacity: 0 });
+        newEL.appendTo($allMsg);
+        newEL.delay($idx * 200);
+        newEL.animate({ opacity: 1 }, 1100);
+        $idx += 1;
+    });
+
+    $allMsg = $('#text3');
+    $wordList = $('#text3').html().split("");
+    $('#text3').html("");
+
+    $.each($wordList, function(idx, elem) {
+        var newEL = $("<span/>").text(elem).css({ opacity: 0 });
+        newEL.appendTo($allMsg);
+        newEL.delay($idx * 200);
+        newEL.animate({ opacity: 1 }, 1100);
+        $idx += 1;
     });
 });
