@@ -37,3 +37,8 @@ $(function() {
         $idx += 1;
     });
 });
+
+//一定期間後非表示にする
+setTimeout(function() {
+    $('#text1').fadeOut();
+}, 8000);
