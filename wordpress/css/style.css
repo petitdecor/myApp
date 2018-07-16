@@ -79,27 +79,26 @@ h1 {
   	color: rgba(255, 255, 255, 0.7);
   	font-size: 10px;
   	text-align: center;
-  	font-family: 'Quicksand',sans-serif;
+  	font-family: 'Optima',sans-serif;
   }
 
 .interval a {
 	text-decoration: none;
 	color: white;
-	letter-spacing: 5px;
+	letter-spacing: 4px;
 }
   
 .interval p .fas {
 	display: block;
-	padding-bottom: 270px;
+	padding-bottom: 240px;
 	font-size: 7em;
 	color: rgba(255, 255, 255, 0.7);
 
 }
 
 .interval p .far {
-	display: block;
-	padding-top: 300px;
-	padding-top: 5px;
+	position: absolute;
+	top: 70%;
 	font-size: 2em;
 	color: rgba(255, 255, 255, 0.7);
 

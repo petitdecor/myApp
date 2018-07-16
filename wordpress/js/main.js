@@ -41,4 +41,8 @@ $(function() {
 //一定期間後非表示にする
 setTimeout(function() {
     $('#text1').fadeOut();
-}, 8000);
+    $('#text2').fadeOut();
+    $('#text3').fadeOut();
+}, 9000);
+
+
